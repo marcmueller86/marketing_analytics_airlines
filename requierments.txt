@@ -4,3 +4,4 @@ scipy
 numpy
 xgboost
 scikit-learn
+matplotlib

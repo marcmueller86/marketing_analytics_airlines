@@ -1,4 +1,23 @@
-## Explanation of the analysis
+# Structure of code and files 
+- src
+   - crawler.py -> crawling data from skytrex and do a first processing
+   - topic_moddling.py -> applying different topic moddeling approaches do a processing and joing of topics 
+   - analytics.py -> applying different statistic and machine learning processes to the data and apply them 
+- results 
+   - tree
+      - output of all dt of the three predictions 
+   - json
+      - output of the dt as nested json 
+
+# Results
+
+Results of the code can be fined in this looker analysis: 
+
+<https://lookerstudio.google.com/s/uxmm2CWLWz8>
+
+# Explanation of the analysis
+
+`analytics.py`
 
 The provided code performs analysis and modeling tasks on a dataset containing sentiments, reviews, ratings, and topics related to different airlines. Let's break down the code and explain its purpose and the reasons for the choices made:
 
@@ -34,7 +53,9 @@ Reasons for Choices:
 
 Overall, the code provides a comprehensive analysis of sentiment, feature correlation, and sentiment prediction for different airlines, enabling insights into customer opinions and potential factors influencing sentiment.
 
-##Explanation of the topic modeling
+# Explanation of the topic modeling
+
+`crawler.py`
 
 The provided code performs topic modeling on airline reviews using various algorithms such as Latent Dirichlet Allocation (LDA), Latent Semantic Analysis (LSA), Hierarchical Dirichlet Process (HDP), and Non-Negative Matrix Factorization (NMF). Here's a breakdown of the code and its functionalities:
 
