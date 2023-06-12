@@ -35,7 +35,7 @@ The provided code performs analysis and modeling tasks on a dataset containing s
    - The code then iterates over each sentiment and variable to extract the correlation value between them and appends the results to `output_df`.
    - Finally, the `output_df` DataFrame is saved to a CSV file.
 
-3. **Regression Analysis:**
+3. **Classification Analysis (Feature Importance):**
    - Three target variables for sentiment classification are defined: 'sentiment_target_positive', 'sentiment_target_neutral', and 'sentiment_target_negative'.
    - A new DataFrame called `df_res` is created to store the results of the regression analysis.
    - The code iterates over each airline and target variable combination.
@@ -49,7 +49,7 @@ The provided code performs analysis and modeling tasks on a dataset containing s
 
 Reasons for Choices:
 - **Correlation Analysis:** The code calculates the correlation between sentiments and various variables/features to understand their relationships. This analysis helps identify potential patterns and associations between sentiments and specific aspects of airline reviews.
-- **Regression Analysis:** By performing regression analysis using linear regression, logistic regression, and XGBoost models, the code aims to predict the sentiment categories based on the given features. This can provide insights into the importance of different features in determining sentiment and compare the performance of different models.
+- **Classification Analysis:** By performing regression analysis using linear regression, logistic regression, and XGBoost models, the code aims to predict the sentiment categories based on the given features. This can provide insights into the importance of different features in determining sentiment and compare the performance of different models.
 
 Overall, the code provides a comprehensive analysis of sentiment, feature correlation, and sentiment prediction for different airlines, enabling insights into customer opinions and potential factors influencing sentiment.
 
